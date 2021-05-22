@@ -1,0 +1,38 @@
+npm init
+
+then
+npm i -D parcel-bundler
+
+name the package file 
+script :{
+                               incase if the html is inside the src folder
+          "dev" : "parcel src/index.html",
+
+          for building the app
+          "prod" : "parcel build src/index.html"
+}
+
+
+design course channel
+https://www.youtube.com/watch?v=OK6akGZCC88
+
+
+
+this example is based on es6 syntax it wont work without parcel installation
+so install parcel
+
+examples
+
+bro.js  ........file
+
+const bro = (greeting)=>{
+          return `${greeting}, bro`
+}
+
+export {bro}
+
+index.js  ......file
+
+import {bro} from './bro'
+
+document.querySelector('h1').textContent = bro(`how's it going`)
